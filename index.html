@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi primer juego</title>
+</head>
+<body style="background:#101b40;color:white;text-align:center;font-family:Arial">
+  <h1>🚀 Mi juego</h1>
+  <p id="puntos">Puntos: 0 ⭐</p>
+  <button onclick="sumar()" style="font-size:25px">
+    💥 DISPARAR
+  </button>
+
+  <script>
+    let puntos = 0;
+
+    function sumar() {
+      puntos++;
+      document.getElementById("puntos").textContent =
+        "Puntos: " + puntos + " ⭐";
+    }
+  </script>
+</body>
+</html>
